@@ -31,7 +31,7 @@ app.get("/isOdd/:numString", (req, res) => {
     return;
   }
 
-  res.status(200).json({ isEven: isOdd(parsedInt.number) });
+  res.status(200).json({ isOdd: isOdd(parsedInt.number) });
 });
 
 app.listen(process.env.PORT, () => {
